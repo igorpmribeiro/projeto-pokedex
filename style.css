@@ -50,7 +50,7 @@
   background: #f35886;
 }
 .bug {
-  background: #a8b820;
+  background: #a9b820;
 }
 .ghost {
   background: #705898;
@@ -136,14 +136,16 @@ main .containet #result .img-box {
 }
 
 main .container #result {
-  display: flex;
+  display: none;
   gap: 12px;
   align-items: center;
-  justify-content: space-around;
-  padding: 8px 12px;
-  border-radius: 15px;
-  width: calc(100% - 55px);
-  max-height: 330px;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  width: max-content;
+  height: max-content;
+  box-shadow: rgba(255, 255, 255, 0.35) 5px 12px 50px;
+  border-radius: 5px;
+  transition: all .3s;
 }
 
 main .container #result .additional-infos {

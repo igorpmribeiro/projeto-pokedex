@@ -14,7 +14,8 @@ const fetchApi = (pkmn) => {
   .then((data) => {
     return data;
   });
-
+  pokeSearch.value = '';
+  container.style.display = 'flex';
   return pokeInfos;
 }
 
