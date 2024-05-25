@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-smooth: subpixel-antialiased;
+}
+/* COLORS */
+
+.fire {
+  background: #f08030;
+}
+.electric {
+  background: #f7cf31;
+}
+.water {
+  background: #6b8ddf;
+}
+.grass {
+  background: #74bf4e;
+}
+.steel {
+  background: #b6b6cc
+}
+.rock {
+  background: #b8a038
+}
+.ground {
+  background: #e0c16d;
+}
+.fairy {
+  background: #daa3db;
+}
+.normal {
+  background-color: #a19e72;
+}
+.ice {
+  background: #98d8d8;
+}
+.fighting {
+  background: #ad453d;
+}
+.poison {
+  background: #a243a1;
+}
+.flying {
+  background: #a189e5;
+}
+.psychic {
+  background: #f35886;
+}
+.bug {
+  background: #a8b820;
+}
+.ghost {
+  background: #705898;
+}
+.dragon {
+  background: #7038f8;
+}
+.dark {
+  background: #705848
+}
+/* FIM COLOR */
+:focus,
+:focus-visible,
+:focus-within {
+  border: none;
+  outline: none;
+}
+
+*:not(header h1) {
+  font-family: 'Rubik', sans-serif;
+  color: #e3e3e3;
+}
+
+body {
+  background: #333333;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: 'Pokemon Solid', sans-serif;
+  color: gold;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+main .container {
+  width: 100%;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0;
+  gap: 11px;
+}
+
+main .container .input-container {
+  display: flex;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+  padding: 0 8px;
+}
+main .container .input-container input {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: .800rem;
+  color: #333;
+  border: none;
+  width: 100%;
+}
+
+main .container .input-container button {
+  padding: 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+main .container .input-container button i {
+  color: #333;
+}
+
+main .containet #result .img-box {
+  width: 100%;
+}
+
+main .container #result {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 12px;
+  border-radius: 15px;
+  width: calc(100% - 55px);
+  max-height: 330px;
+}
+
+main .container #result .additional-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#name,
+#type,
+#ability,
+#weight {
+  display: flex;
+  text-transform: capitalize;
+  color: #333;
+  text-align: center;
+}
+
+/* MEDIA */
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  span {
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  main .container .input-container input,
+  main .container .input-container button i {
+    font-size: 1.5rem;
+  }
+  main .container .input-container input {
+    padding: 8px;
+  }
+}
